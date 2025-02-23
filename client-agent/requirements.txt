@@ -1,0 +1,8 @@
+# System monitoring
+psutil>=5.8.0
+
+# HTTP client
+requests>=2.26.0
+
+# Date and time handling
+python-dateutil>=2.8.2 
