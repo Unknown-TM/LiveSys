@@ -1,0 +1,12 @@
+.report-card {
+  transition: transform 0.2s;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 300px;
+} 

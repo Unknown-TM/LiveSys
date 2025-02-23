@@ -1,0 +1,29 @@
+.chart-container {
+    background-color: var(--bg-light);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.chart-container canvas {
+    padding: 1rem;
+}
+
+.empty-state,
+.loading-state {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.empty-state p {
+    color: var(--text-muted);
+    margin: 0;
+} 

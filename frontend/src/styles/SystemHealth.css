@@ -1,0 +1,29 @@
+.chart-container {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+}
+
+.chart-container canvas {
+  background-color: var(--bg-primary);
+}
+
+.chart-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.chart-error {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--bg-warning);
+  color: var(--text-primary);
+} 

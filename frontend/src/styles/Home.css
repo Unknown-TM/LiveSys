@@ -1,0 +1,48 @@
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.timeline-content {
+  padding: 15px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-color);
+} 

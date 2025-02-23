@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    color: var(--text-primary);
+    margin-top: auto;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    padding-bottom: 2rem;
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.footer-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary);
+    transition: width 0.2s ease;
+}
+
+.footer-links a:hover::before {
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    transition: all 0.2s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+    background-color: var(--bg-primary);
+}
+
+.subscribe-form .input-group {
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.subscribe-form .form-control {
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.subscribe-form .form-control:focus {
+    box-shadow: none;
+}
+
+.subscribe-form .btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: none;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 767.98px) {
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        margin-top: 1rem;
+    }
+    
+    .subscribe-form .input-group {
+        margin: 0 auto;
+    }
+}

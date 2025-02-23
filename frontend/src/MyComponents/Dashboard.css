@@ -1,0 +1,159 @@
+.Dashboard {
+    margin: auto;
+}
+
+.dashboard-card {
+  transition: all 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.metric-label {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  padding: 0.35rem 0.65rem;
+  border-radius: 50rem;
+}
+
+.status-badge.online {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-badge.offline {
+  background-color: #dc3545;
+  color: white;
+}
+
+.custom-progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.custom-progress .progress-bar {
+  border-radius: 4px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0,0,0,0.02);
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.chart-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.metric-card {
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.metric-card.cpu {
+  background: linear-gradient(45deg, #4158D0, #C850C0);
+  color: white;
+}
+
+.metric-card.ram {
+  background: linear-gradient(45deg, #0093E9, #80D0C7);
+  color: white;
+}
+
+.metric-card.disk {
+  background: linear-gradient(45deg, #8EC5FC, #E0C3FC);
+  color: white;
+}
+
+.refresh-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.refresh-button.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.6; }
+}
+
+.stat-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-width: 0;
+    border-left-width: 4px;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.stat-value {
+    margin-left: 3.5rem;
+}
+
+.placeholder-glow {
+    min-height: 2rem;
+}
+
+/* Card colors */
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.border-success {
+    border-color: var(--success) !important;
+}
+
+.border-warning {
+    border-color: var(--warning) !important;
+}
+
+.border-info {
+    border-color: var(--info) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}

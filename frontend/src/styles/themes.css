@@ -1,0 +1,220 @@
+/* Base theme variables */
+:root {
+  --transition-speed: 0.3s;
+  --primary: #0d6efd;
+  --bg-body: #f8f9fa;
+  --bg-light: #ffffff;
+  --bg-dark: #212529;
+  --text-primary: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+  --navbar-bg: #0d6efd;
+  --navbar-color: #ffffff;
+  --card-bg: #ffffff;
+  --hover-bg: #f8f9fa;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --chart-grid: #e9ecef;
+}
+
+/* Light theme (default) */
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --navbar-bg: #0d6efd;
+  --navbar-color: #ffffff;
+  --card-bg: #ffffff;
+  --hover-bg: #f8f9fa;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --chart-grid: #e9ecef;
+}
+
+/* Dark theme */
+.theme-dark {
+  --bg-primary: #1a1d20;
+  --bg-secondary: #212529;
+  --bg-tertiary: #2c3034;
+  --text-primary: #f8f9fa;
+  --text-secondary: #adb5bd;
+  --border-color: #373b3e;
+  --navbar-bg: #0d6efd;
+  --navbar-color: #ffffff;
+  --card-bg: #212529;
+  --hover-bg: #2c3034;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --chart-grid: #373b3e;
+}
+
+/* Auto theme (system preference) */
+@media (prefers-color-scheme: dark) {
+  .theme-auto {
+    --bg-primary: #1a1d20;
+    --bg-secondary: #212529;
+    --bg-tertiary: #2c3034;
+    --text-primary: #f8f9fa;
+    --text-secondary: #adb5bd;
+    --border-color: #373b3e;
+    --navbar-bg: #0d6efd;
+    --navbar-color: #ffffff;
+    --card-bg: #212529;
+    --hover-bg: #2c3034;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --chart-grid: #373b3e;
+  }
+}
+
+/* Apply theme variables with transitions */
+* {
+  transition: background-color var(--transition-speed), 
+              color var(--transition-speed), 
+              border-color var(--transition-speed),
+              box-shadow var(--transition-speed);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  color: var(--navbar-color);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Table styles */
+.table {
+  color: var(--text-primary);
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Modal styles */
+.modal-content {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+.modal-header {
+  border-bottom-color: var(--border-color);
+}
+
+.modal-footer {
+  border-top-color: var(--border-color);
+}
+
+/* Form controls */
+.form-control {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.dropdown-item {
+  color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+  background-color: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+/* Progress bars */
+.progress {
+  background-color: var(--bg-tertiary);
+}
+
+/* Charts */
+.chart-container {
+  background-color: var(--card-bg);
+}
+
+.chart-container canvas {
+  background-color: var(--card-bg);
+}
+
+/* Text colors */
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+
+/* Loading screen */
+.loading-screen {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Badges */
+.badge {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* Buttons */
+.btn-light {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-light:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] {
+  --primary: #0d6efd;
+  --bg-body: #212529;
+  --bg-light: #2c3034;
+  --bg-dark: #1a1d20;
+  --text-primary: #f8f9fa;
+  --text-muted: #adb5bd;
+  --border-color: #373b3e;
+} 
