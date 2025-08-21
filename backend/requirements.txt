@@ -4,7 +4,7 @@ uvicorn>=0.15.0
 pydantic>=1.8.0
 
 # Database
-sqlite3
+# sqlite3 is built into Python, no need to install separately
 
 # CORS middleware
 python-multipart>=0.0.5
