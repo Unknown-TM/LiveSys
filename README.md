@@ -119,7 +119,7 @@ CONTRIBUTING
 VERSION INFO
 -----------
 Current Version: 1.9.7
-Last Updated: {current_date}
+Last Updated: 22/8/25
 License: MIT
 
 CONTACT
