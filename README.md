@@ -118,7 +118,7 @@ CONTRIBUTING
 
 VERSION INFO
 -----------
-Current Version: 1.9.7
+Current Version: 1.0.0
 Last Updated: 22/8/25
 License: [LICENSE](LICENSE)
 
