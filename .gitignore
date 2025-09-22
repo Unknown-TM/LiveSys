@@ -32,6 +32,7 @@ venv.bak/
 .venv/
 
 # IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
@@ -153,6 +154,8 @@ logs
 
 # FastAPI
 .pytest_cache/
+.coverage
+htmlcov/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -208,3 +211,12 @@ cython_debug/
 
 # Project specific
 hardware.db
+# React build
+build/
+
+# Production build
+/build
+
+# Misc
+*.tgz
+*.tar.gz

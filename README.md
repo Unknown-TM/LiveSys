@@ -118,9 +118,9 @@ CONTRIBUTING
 
 VERSION INFO
 -----------
-Current Version: 1.9.7
+Current Version: 1.0.0
 Last Updated: 22/8/25
-License: MIT
+License: [LICENSE](LICENSE)
 
 CONTACT
 -------
@@ -136,3 +136,8 @@ ACKNOWLEDGMENTS
 - Python psutil library
 
 This project is maintained and supported by the IT monitoring team. 
+DISCLAIMER
+--------------
+This project is provided *as is*, without warranty of any kind. Use at your own risk.  
+Hardware monitoring may behave differently depending on your system’s configuration, drivers, or permissions.  
+This application does not transmit personal data, but users are responsible for how they deploy and use it.
