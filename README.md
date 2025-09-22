@@ -135,7 +135,8 @@ ACKNOWLEDGMENTS
 - Bootstrap
 - Python psutil library
 
-This project is maintained and supported by the IT monitoring team. 
+This project is maintained and supported by the IT monitoring team.
+
 DISCLAIMER
 --------------
 This project is provided *as is*, without warranty of any kind. Use at your own risk.  
